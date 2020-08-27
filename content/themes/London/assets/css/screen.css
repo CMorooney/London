@@ -62,10 +62,10 @@ body {
 
 .page-head {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 13vw 0;
+    padding: 1vw 0;
     max-width: 70%;
     margin: auto;
     text-align: center;
@@ -98,7 +98,7 @@ body {
 
 .page-head-title {
     margin: 0;
-    font-size: 4.2rem;
+    font-size: 2.2rem;
     color: var(--color-base);
 }
 @media (max-width: 500px) {
@@ -187,16 +187,16 @@ body {
 }
 
 .site-head-center {
-    display: flex;
+    display: block;
     justify-content: center;
     width: 100%;
 }
 
-.site-head-logo {
+.site-head-title {
     flex-shrink: 0;
     display: block;
     padding: 10px;
-    color: var(--color-base);
+    color: white;
     font-size: 2.1rem;
     line-height: 1em;
     font-weight: 700;
@@ -210,7 +210,7 @@ body {
 
 .site-head-logo img {
     display: block;
-    margin-top: 2px;
+    margin: auto;
     width: auto;
     height: 28px;
 }
@@ -400,13 +400,17 @@ body {
 
 .post-card {
     position: relative;
-    flex: 1 1 50%;
+    flex: 1 0 25%;
     display: flex;
     position: relative;
-    height: 35vw;
+    height: 25vw;
     background: linear-gradient(135deg, #1c1921 0%, #eaddff 100%) center center;
     background-size: cover;
     overflow: hidden;
+    border-width: 5px;
+    border-color: white;
+    border-style: inset;
+    margin: 15px;
 }
 
 @media (max-width: 700px) {
@@ -417,7 +421,7 @@ body {
 }
 
 .post-card-large {
-    flex: 1 1 100%;
+    flex: 1 0 50%;
 }
 
 .post-card-link {
@@ -452,13 +456,13 @@ body {
 
 .post-card-link:hover .post-card-content {
     opacity: 1;
-    transition: opacity 0.3s cubic-bezier(.33,0,.2,1);
+    transition: opacity 0.3s cubic-bezier(.15,0,.2,1);
 }
 
 .post-card-title {
     margin: 0;
     display: inline-block;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     max-width: 70%;
     text-align: center;
     transition: all 0.3s cubic-bezier(.33,0,.2,1);
@@ -484,13 +488,9 @@ body {
 }
 
 .post-card.no-image .post-card-title {
-    font-size: 5rem;
+    font-size: 2.5rem;
     line-height: 1.15em;
     text-align: left;
-}
-
-.post-card.no-image:hover .post-card-title {
-    text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -520,7 +520,7 @@ body {
 }
 
 .post-content-title {
-    margin: 0 0 3vw;
+    margin: 0 0 2vw;
     color: var(--color-base);
     text-align: center;
 }
