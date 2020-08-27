@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{!-- Base Meta --}}
-    <title>{{meta_title}}</title>
+    <title>DEV {{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -37,9 +37,8 @@
                 <div class="site-head-center">
                     {{#if @site.logo}}
                     <a class="site-head-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
-                    {{else}}
-                    <a class="site-head-logo" href="{{@site.url}}">{{@site.title}}</a>
                     {{/if}}
+                    <a class="site-head-logo" href="{{@site.url}}">{{@site.title}}</a>
                 </div>
                 <div class="site-head-right">
                     <div class="social-links">

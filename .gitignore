@@ -24,3 +24,5 @@ projectFilesBackup
 dist/
 
 .ghostpid
+content/themes/London/assets/built/*
+content/data/*
