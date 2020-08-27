@@ -407,7 +407,6 @@ body {
     background: linear-gradient(135deg, #1c1921 0%, #eaddff 100%) center center;
     background-size: cover;
     overflow: hidden;
-    counter-increment: posts;
 }
 
 @media (max-width: 700px) {
@@ -468,7 +467,6 @@ body {
 /* Posts without images */
 .post-card.no-image:before {
     display: block;
-    content: counter(posts);
     position: absolute;
     bottom: -0.15em;
     right: 5vw;
