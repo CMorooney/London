@@ -446,7 +446,7 @@ body {
 }
 
 .post-card.with-image .post-card-content {
-    opacity: 0;
+    opacity: .7; /* set to 0 to show content on hover only */
 }
 @media (max-width: 700px) {
   .post-card.with-image .post-card-content {
