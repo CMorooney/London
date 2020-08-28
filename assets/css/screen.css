@@ -164,7 +164,7 @@ body {
 
 .nav {
     display: flex;
-    flex-flow: columm wrap;
+    flex-flow: wrap;
     padding: 0;
     list-style: none;
     width: 100%;
@@ -257,6 +257,10 @@ body {
 }
 
 @media (max-width: 850px) {
+    .nav {
+        display: block;
+        width: 100%;
+    }
     .site-head {
         padding: 0;
     }
@@ -329,7 +333,7 @@ body {
     }
 
     .site-head-open {
-        background: rgba(255,255,255,1);
+        background: var(--color-bg);
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
