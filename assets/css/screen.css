@@ -384,6 +384,8 @@ body {
 .post-feed {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 2000px;
 }
 
 .post-card {
@@ -500,7 +502,6 @@ body {
 .post-content {
     max-width: 720px;
     margin: 0 auto;
-    padding: 6vw 0;
 }
 
 .post-content-header {
