@@ -2,7 +2,7 @@
 /* ---------------------------------------------------------- */
 
 .kg-card {
-    margin: 20px 7vw;
+    margin: 20px;
 }
 
 .kg-embed-card {
@@ -13,8 +13,8 @@
 }
 
 .kg-image {
-    max-width: 100%;
     width: 100%;
+    height: auto;
 }
 
 .kg-card figcaption {
