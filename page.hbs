@@ -2,10 +2,11 @@
 
 {{#post}}
 <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-
-    <header class="post-content-header">
-        <h1 class="post-content-title">{{title}}</h1>
-    </header>
+    {{#match @page.show_title_and_feature_image}}
+        <header class="post-content-header">
+            <h1 class="post-content-title">{{title}}</h1>
+        </header>
+    {{/match}}
 
     {{#if feature_image}}
     <div class="post-content-image">

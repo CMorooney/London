@@ -1,5 +1,5 @@
 {
-    "name": "PurplePizza",
+    "name": "purple-pizza",
     "description": "Calvin's Pizza ghost theme, forked from London",
     "version": "1.0.0",
     "engines": {
@@ -17,6 +17,7 @@
     },
     "author": {
         "name": "Calvin",
+        "email": "coolercal@gmail.com",
         "url": "https://calvins.pizza"
     },
     "gpm": {
