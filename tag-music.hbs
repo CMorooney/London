@@ -1,0 +1,63 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<header class="page-head">
+    <p class="page-head-description">
+        Bands
+    </p>
+</header>
+
+<div class="post-feed">
+    <article class="post-card with-image" style="background-image: url('https://calvins.pizza/uploads/princessbarbara/frend_return_to_amender/cover.jpg'); background-position: 50% 45%">
+        <a class="post-card-link" href="">
+            <div class="post-card-content">
+                <h2 class="post-card-title">Princess Barbara</h2>
+            </div>
+        </a>
+    </article>
+    <article class="post-card with-image" style="background-image: url('https://calvins.pizza/uploads/crybabyapprentice/pathwork/cover.jpg'); background-position: 50% 40%">
+        <a class="post-card-link" href="">
+            <div class="post-card-content">
+                <h2 class="post-card-title">Crybaby Apprentice</h2>
+            </div>
+        </a>
+    </article>
+</div>
+<div class="post-feed">
+    <article class="post-card with-image" style="background-image: url('https://calvins.pizza/uploads/bldmd/Ma%CC%88del/cover.jpg'); background-position: 50% 4%">
+        <a class="post-card-link" href="">
+            <div class="post-card-content">
+                <h2 class="post-card-title">Blød Maud</h2>
+                <h3 class="post-card-subtitle">(legacy)</h3>
+            </div>
+        </a>
+    </article>
+    <article class="post-card post with-image" style="background-image: url('https://calvins.pizza/uploads/thinktwicedublin/ttd_artist_pic.jpg'); background-position: 50% 40%">
+        <a class="post-card-link" href="">
+            <div class="post-card-content">
+                <h2 class="post-card-title">Think Twice, Dublin</h2>
+                <h3 class="post-card-subtitle">(legacy)</h3>
+            </div>
+        </a>
+    </article>
+</div>
+
+<br />
+<br />
+<br />
+
+<header class="page-head">
+    <p class="page-head-description">
+        Posts
+    </p>
+</header>
+
+<div class="post-feed">
+{{#foreach posts}}
+
+    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+    {{> "post-card"}}
+
+{{/foreach}}
+</div>
