@@ -1,0 +1,45 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<header class="page-head">
+    <h1 class="post-content-title">Crybaby Apprentice</h1>
+    <p class="page-head-description">
+        releases
+    </p>
+</header>
+
+<div class="post-feed">
+    <article class="post-card with-image" style="background-image: url('https://calvins.pizza/uploads/crybabyapprentice/Managerless%20Move%20-%20Resource/cover.png'); background-position: 50% 40%">
+        <a class="post-card-link" href="https://crybabyapprentice.bandcamp.com/album/managerless-move-resource" target="_blank">
+            <div class="post-card-content">
+                <h2 class="post-card-title">Managerless Move / Resource</h2>
+                <h3 class="post-card-subtitle">Nov 20, 2020</h3>
+            </div>
+        </a>
+    </article>
+    <article class="post-card with-image" style="background-image: url('https://calvins.pizza/uploads/crybabyapprentice/pathwork/cover.jpg'); background-position: 50% 45%">
+        <a class="post-card-link" href="https://crybabyapprentice.bandcamp.com/album/pathwork" target="_blank">
+            <div class="post-card-content">
+                <h2 class="post-card-title">Pathwork</h2>
+                <h3 class="post-card-subtitle">Aug 2, 2024</h3>
+            </div>
+        </a>
+    </article>
+</div>
+
+<br />
+<br />
+
+{{#get "posts" id="66c20c2c23d97673f68bc8e8" include="tags,authors" as |post|}}
+    {{#post}}
+    <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+        <header class="post-content-header">
+            <h1 class="post-content-title">About</h1>
+        </header>
+        <div class="post-content-body">
+            {{content}}
+        </div>
+    </article>
+    {{/post}}
+{{/get}}
