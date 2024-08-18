@@ -54,10 +54,12 @@ into the {body} of the default.hbs template --}}
 </header>
 
 <div class="post-feed">
-{{#foreach posts}}
+    {{#get "posts" limit="all" filter="tags:-hidden"}}
+        {{#foreach posts}}
 
-    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-    {{> "post-card"}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
 
-{{/foreach}}
+        {{/foreach}}
+    {{/get}}
 </div>
